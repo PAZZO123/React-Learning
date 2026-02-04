@@ -2,10 +2,14 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 //import { createElement } from "react"
 import './index.css'
-import App from './App.jsx'
-let name='Patrick straton'
+import NavBar from './App.jsx'
+//let name='Patrick straton'
+
+
 
 const root =createRoot(document.getElementById('root'))
-const Element=<h1 className='greeting'> Hello {name} How is everything</h1>
-root.render(Element)
+//const Element=<h1 className='greeting'> Hello {name} How is everything</h1>
+root.render(
+    <NavBar/>
+)
 
