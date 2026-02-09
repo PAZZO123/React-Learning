@@ -9,7 +9,7 @@ function Header() {
         <header>
             <img src={Logo} width="40px" alt="React logo" />
             <nav>
-                <ul>
+                <ul className="nav-list">
                     <li>Pricing</li>
                     <li>About</li>
                     <li>Contact</li>
