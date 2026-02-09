@@ -7,9 +7,11 @@ let h1 = <h1>Fun facts about React</h1>;
 
 let list = (
   <ul>
-    <li>It was created in 2013</li>
-    <li>It is maintained by Meta</li>
-    <li>It is composable and very easy to use</li>
+           <li>Was first release in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 200K stars on GitHub</li>
+            <li>Is maintained by Meta</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
   </ul>
 );
 
