@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import Logo from "./public/vite.svg";
+import Logo from "/src/assets/react.jpg";
 
 let root = createRoot(document.getElementById("root"));
 
@@ -15,7 +15,7 @@ let list = (
 
 root.render(
   <div>
-    <img src="{Logo}" width="40px" />
+    <img src={Logo} width="40px" />
     {h1}
     {list}
   </div>
