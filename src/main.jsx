@@ -2,25 +2,43 @@ import { createRoot } from "react-dom/client";
 import Logo from "/src/assets/react.jpg";
 
 let root = createRoot(document.getElementById("root"));
-
-let h1 = <h1>Fun facts about React</h1>;
-
-let list = (
-  <ul>
-           <li>Was first release in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 200K stars on GitHub</li>
-            <li>Is maintained by Meta</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-  </ul>
-);
-function reactCard(){
-    return (<div>
-    <img src={Logo} width="40px" />
-    {h1}
-    {list}
-  </div>)
+function Header(){
+    return (
+        <header> 
+        <img src={Logo} width="40px"/>
+          <h1>Fun Fact about React !</h1>
+        </header>
+    )
 }
+function Footer(){
+    return (
+        <p>    "© 2026 patrick development. All rights reserved."</p>
+    )
+}
+
+function Page() {
+    return (
+        <ol>
+            <li>React is a popular library, so I will be able to
+            fit in with all the coolest devs out there! 😎</li>
+            <li>I am more likely to get a job as a front end developer
+            if I know React</li>
+              <li>React is a popular library, so I will be able to
+            fit in with all the coolest devs out there! 😎</li>
+            <li>I am more likely to get a job as a front end developer
+            if I know React</li>
+              <li>React is a popular library, so I will be able to
+            fit in with all the coolest devs out there! 😎</li>
+            <li>I am more likely to get a job as a front end developer
+            if I know React</li>
+        </ol>
+    )
+}
+
 root.render(
-  reactCard()
-);
+    <>
+    <Header/>
+    <Page />
+    <Footer/>
+    </>
+)
