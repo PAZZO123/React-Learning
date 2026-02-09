@@ -14,11 +14,13 @@ let list = (
             <li>Powers thousands of enterprise apps, including mobile apps</li>
   </ul>
 );
-
-root.render(
-  <div>
+function reactCard(){
+    return (<div>
     <img src={Logo} width="40px" />
     {h1}
     {list}
-  </div>
+  </div>)
+}
+root.render(
+  reactCard()
 );
