@@ -3,26 +3,16 @@
 }
 
 body {
-    padding: 20px;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #27292c;
     color: white;
 }
 
-h1 {
-    margin-top: 30px;
-}
 
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 120px;
-    font-size: large;
-  
-}
 .header {
   display: flex;
+  gap: 7px;
   background-color: #21222A;
   position: relative;
   height: 90px;
@@ -36,4 +26,10 @@ h1 {
  ul li::marker{
   color: #61DAFB;
   font-size: large;
+}
+.main{
+  padding: 60px 30px;
+}
+main >h1{
+  font-size: 39px;
 }
