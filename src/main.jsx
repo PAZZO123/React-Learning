@@ -1,23 +1,8 @@
 import { createRoot } from "react-dom/client";
-import Logo from "/src/assets/react.jpg";
 import './index.css'
+import Whatever from './App'
 
 let root = createRoot(document.getElementById("root"));
-
-function Header() {
-    return (
-        <header className="header">
-            <img src={Logo} width="40px" alt="React logo" />
-            <nav>
-                <ul className="nav-list">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
 
 function MainContent() {
     return (
@@ -42,7 +27,7 @@ function Footer() {
 function Page() {
     return (
         <>
-            <Header />
+            <Whatever />
             <MainContent />
             <Footer />
         </>

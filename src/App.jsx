@@ -1,5 +1,17 @@
-function NavBar(){
-    return <h1>An Awesome Navbar</h1>
-}
+import Logo from "/src/assets/react.jpg";
 
-export default NavBar
+
+export default function Header() {
+    return (
+        <header className="header">
+            <img src={Logo} width="40px" alt="React logo" />
+            <nav>
+                <ul className="nav-list">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
