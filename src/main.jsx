@@ -6,7 +6,7 @@ let root = createRoot(document.getElementById("root"));
 
 function Header() {
     return (
-        <header>
+        <header className="header">
             <img src={Logo} width="40px" alt="React logo" />
             <nav>
                 <ul className="nav-list">
