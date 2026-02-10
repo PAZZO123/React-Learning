@@ -39,4 +39,5 @@ main >h1{
 }
 .list > li {
   margin-block: 10px;
+  line-height: 20px;
 }
