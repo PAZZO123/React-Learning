@@ -1,17 +1,10 @@
-import Logo from "/src/assets/react.jpg";
-
-
-export default function Header() {
+import Header  from "./Components/Header";  
+import Main from "./Components/Main";
+export default function App(){
     return (
-        <header className="header">
-            <img src={Logo} width="40px" alt="React logo" />
-            <nav>
-                <ul className="nav-list">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
+        <>
+        <Header/>
+        <Main/>
+        </>
     )
 }

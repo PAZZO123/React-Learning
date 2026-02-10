@@ -23,5 +23,17 @@ h1 {
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  background-color: #21222A;
+  position: relative;
+  height: 90px;
+  padding: 15px;
+}
+.slogon{
+  color: #61DAFB;
+  font-size: xx-large;
+  padding-top: 20px;
+}
+ ul li::marker{
+  color: #61DAFB;
+  font-size: large;
 }
