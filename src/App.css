@@ -6,4 +6,10 @@
     display: flex;
     justify-content: center;
     color:white;
+    height: 55px;
+    align-items: center;
+}
+header > img{
+  width:24px;
+  padding-right: 7px;
 }
