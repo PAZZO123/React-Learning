@@ -17,6 +17,7 @@ header > img{
 
 article.journal-entry {
     display: flex;
+    padding: 30px;
 }
 
 article.journal-entry .marker {
@@ -25,8 +26,8 @@ article.journal-entry .marker {
 }
 
 article.journal-entry .main-image-container {
-    width: 125px;
-    height: 168px;
+    width: 300px;
+    height: 328px;
     overflow: hidden;
     border-radius: 5px;
     flex-shrink: 0;
@@ -44,7 +45,9 @@ article.journal-entry .main-image {
     font-size: 0.7rem;
     margin-right: 12px;
 }
-
+.info-container{
+  padding-top: 100px;
+}
 .info-container a {
     color: #2B283A;
     font-size: 0.7rem;

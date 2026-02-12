@@ -6,7 +6,7 @@ export default function Main(prop) {
                 <img 
                     className="main-image"
                     src= {prop.src}//"https://scrimba.com/links/travel-journal-japan-image-url" 
-                    alt={prop.name.tolowerCase()} 
+                    alt={prop.name} 
                 />
             </div>
             <div className="info-container">
@@ -17,8 +17,8 @@ export default function Main(prop) {
                 />
                 <span className="country">{prop.country}</span>
                 <a href={prop.href}>View on Google Maps</a>
-                <h2 className="entry-title">{prop.name}</h2>
-                <p className="trip-dates">{prop.date}</p>
+                <h1 className="entry-title">{prop.name}</h1>
+                <h4 className="trip-dates">{prop.date}</h4>
                 <p className="entry-text">{prop.description}</p>
             </div>
             
