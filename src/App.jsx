@@ -1,7 +1,13 @@
-import globe from './assets/Globe.svg'
+import Header from './component/Header.jsx'
+import Entry from './component/Entry.jsx'
+
+
 export default function App(){
-  return(<header className='header'>
-    <img src={globe}/>
-    <span>my travel journal.</span>
-  </header>)
+  return(
+    <>
+    <Header/>
+    <Entry/>
+    <Entry/>
+    </>
+  )
 }
