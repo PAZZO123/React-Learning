@@ -5,8 +5,8 @@ export default function Main(prop) {
             <div className="main-image-container">
                 <img 
                     className="main-image"
-                    src= {prop.src}//"https://scrimba.com/links/travel-journal-japan-image-url" 
-                    alt={prop.name} 
+                    src= {prop.img.src}//"https://scrimba.com/links/travel-journal-japan-image-url" 
+                    alt={prop.img.name} 
                 />
             </div>
             <div className="info-container">
@@ -19,7 +19,7 @@ export default function Main(prop) {
                 <a href={prop.href}>View on Google Maps</a>
                 <h1 className="entry-title">{prop.name}</h1>
                 <h4 className="trip-dates">{prop.date}</h4>
-                <p className="entry-text">{prop.description}</p>
+                <p className="entry-text">{prop.text}</p>
             </div>
             
         </article>
