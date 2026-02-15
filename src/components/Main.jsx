@@ -1,12 +1,12 @@
 import map from '../assets/loc.png'
-export default function Main(prop) {
+export default function Main({img, country, href, title, date, text }) {
     return (
         <article className="journal-entry">
             <div className="main-image-container">
                 <img 
                     className="main-image"
-                    src= {prop.img.src}//"https://scrimba.com/links/travel-journal-japan-image-url" 
-                    alt={prop.img.alt} 
+                    src= {img.src}//"https://scrimba.com/links/travel-journal-japan-image-url" 
+                    alt={img.alt} 
                 />
             </div>
             <div className="info-container">
@@ -15,11 +15,11 @@ export default function Main(prop) {
                     src={map} 
                     alt="map  icon"
                 />
-                <span className="country">{prop.country}</span>
-                <a href={prop.href}>View on Google Maps</a>
-                <h1 className="entry-title">{prop.title}</h1>
-                <h4 className="trip-dates">{prop.date}</h4>
-                <p className="entry-text">{prop.text}</p>
+                <span className="country">{country}</span>
+                <a href={href}>View on Google Maps</a>
+                <h1 className="entry-title">{title}</h1>
+                <h4 className="trip-dates">{date}</h4>
+                <p className="entry-text">{text}</p>
             </div>
             
         </article>
