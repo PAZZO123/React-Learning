@@ -1,5 +1,14 @@
+import { useState } from "react"
 
-let Items=['Cucumber','Carrot','Cabbage']
+
+
+//let Items=
+
+
+export default function Main(){
+
+
+const [Items, setItems]=useState(['Cucumber','Carrot','Cabbage'])
 const listItems=Items.map(item=><li key={item}>{item}</li>)
 
 function handleSubmit(event){
@@ -7,12 +16,8 @@ function handleSubmit(event){
     console.log('Form Submitted')
     const formData=new FormData(event.currentTarget)
     const forItem=formData.get('ingredient')
-    listItems.push(<li key={forItem}>{forItem}</li>)
-    console.log(forItem)
-    console.log(listItems)
+    setItems(items=>[...items, forItem])
 }
-
-export default function Main(){
     return (<main>
        <form onSubmit={handleSubmit} action="" className="form"> 
         <input  type="text"
