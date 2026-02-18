@@ -3,7 +3,7 @@ import { useState } from "react"
 export default function Main(){
 
 
-const [Items, setItems]=useState(['Cucumber','Carrot','Cabbage'])
+const [Items, setItems]=useState([])
 const listItems=Items.map(item=><li key={item}>{item}</li>)
 
 function handleSubmit(formData){
@@ -21,8 +21,17 @@ function handleSubmit(formData){
                name='ingredient' />
          <button>Add Ingredient</button>
           </form>
-          <ul>
-            {listItems}
-          </ul>
+           
+         { listItems.length>0 &&  <section>
+            <h2> Ingredients on hands:</h2>
+            <ul className='ingredients-list' arial-live='polite'>{listItems}</ul>
+            { listItems.length>3&&<div className="get-recipe-container">
+            <div>
+                <h3>Ready for Recipe?</h3>
+                <p>Generate a recipe from your list of Ingredients.</p>
+            </div>
+            <button>Get a recipe</button>
+            </div>}
+           </section>}
     </main>)
 }
