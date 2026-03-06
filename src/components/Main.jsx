@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { getRecipeFromMistral } from '../ai'
 import Ingredient from "./SubComponents/Ingreadient"
 import Recipe from "./SubComponents/Recipe"
@@ -9,6 +9,7 @@ export default function Main(){
 
 const [Items, setItems]=useState([])
 const listItems=Items.map(item=><li key={item}>{item}</li>)
+const recipeSection=useRef(null)
 
 function handleSubmit(formData){
     //event.preventDefault()
@@ -18,6 +19,11 @@ function handleSubmit(formData){
     setItems(items=>[...items, forItem])
 }
 
+useEffect(()=>{
+    if(recipeSection!==null && Items !==""){
+       recipeSection.current.scrollIntoView()
+    }
+})
 const [recipeShown, setRecipeShown]=useState("")
 
 async function handleRecipe(){
@@ -36,7 +42,9 @@ async function handleRecipe(){
          <button>Add Ingredient</button>
           </form>
            
-         { Items.length>0 && <Ingredient handleRecipe={handleRecipe}
+         { Items.length>0 && <Ingredient
+         ref={recipeSection}
+          handleRecipe={handleRecipe}
           Ingredients={listItems}
           length={Items.length}/> }
 
