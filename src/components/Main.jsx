@@ -10,6 +10,7 @@ export default function Main(){
 const [Items, setItems]=useState([])
 const listItems=Items.map(item=><li key={item}>{item}</li>)
 const recipeSection=useRef(null)
+const [recipeShown, setRecipeShown]=useState("")
 
 function handleSubmit(formData){
     //event.preventDefault()
@@ -20,11 +21,11 @@ function handleSubmit(formData){
 }
 
 useEffect(()=>{
-    if(recipeSection!==null && Items !==""){
+    if(recipeSection!==null && recipeShown!==""){
        recipeSection.current.scrollIntoView()
     }
-})
-const [recipeShown, setRecipeShown]=useState("")
+},[recipeShown])
+
 
 async function handleRecipe(){
     console.log("HF Key:", import.meta.env.VITE_HF_API_KEY)
